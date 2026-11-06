@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#EEF2F8">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="app.css">
+<title>Calc Suit</title>
+</head>
+<body>
+<div class="shell" id="shell">
+  <nav class="sidebar" id="sidebar" aria-label="Menu"></nav>
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="main">
+    <div class="notice" id="notice" role="status" hidden></div>
+    <main class="screens" id="screens"></main>
+    <nav class="tabbar" id="tabbar" aria-label="Main"></nav>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<noscript>Calc Suit needs JavaScript to run.</noscript>
+<script src="engine.js"></script>
+<script src="tools.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
